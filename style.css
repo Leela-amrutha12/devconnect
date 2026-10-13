@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #1e293b;
+}
+
+/* Navigation links container */
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+/* Navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav h1 {
+    color: white;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:focus {
+    outline: none;
+}
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f1f5f9;
+}
+.hero h2 {
+    font-size: 48px;
+}
+.hero p {
+    max-width: 600px;
+}
+.hero a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1e293b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* Learning Section */
+.learning {
+    padding: 80px 60px;
+    text-align: center;
+    background-color: white;
+}
+
+.learning h2 {
+    margin-bottom: 40px;
+}
+
+.learning-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.learning-card {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8fafc;
+}
+
+.learning-card h3 {
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+/* Projects Section */
+.projects {
+    padding: 80px 60px;
+    text-align: center;
+    background-color: #f8fafc;
+}
+
+.projects h2 {
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8fafc;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+/* Community Section */
+.community {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.community h2 {
+    margin-bottom: 20px;
+}
+
+.community p {
+    margin-bottom: 30px;
+}
+
+.community a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1e293b;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.community a:hover {
+    opacity: 0.8;
+}
+/* Footer */
+footer {
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+/* Hover Effects */
+.learning-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .learning-container,
+    .projects-container {
+        flex-direction: column;
+    }
+    .hero h2 {
+        font-size: 32px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+ /* Button Hover Effect */
+button:hover,
+.hero-btn:hover,
+.community-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Hover Effect */
+.learning-card:hover,
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar Link Hover Effect */
+nav a:hover {
+    color: #4da6ff;
+}
+/* Hero Animation */
+.hero h2 {
+    animation: fadeIn 1s ease-in;
+}
+
+.hero p {
+    animation: fadeIn 1.5s ease-in;
+}
+
+.hero a {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Learning Cards Animation */
+.learning-card {
+    animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Project Cards Animation */
+.project-card {
+    animation: slideUp 1s ease-in-out;
+}
